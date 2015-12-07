@@ -6,7 +6,7 @@ exports.config = {
   //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
   specs: ['specs/*spec.js'],
 
-  restartBrowserBetweenTests: true,
+  // restartBrowserBetweenTests: true,
 
   onPrepare: function(){
       var caps = browser.getCapabilities()
