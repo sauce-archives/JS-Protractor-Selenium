@@ -7,6 +7,6 @@ describe('Protractor Demo App1', function() {
 
     var greeting = element(by.binding('yourName'));
 
-    expect(greeting.getText()).toEqual('Hello Example!');
+    expect(greeting.getText()).toEqual('Hello Example! 123');
   });
 });
