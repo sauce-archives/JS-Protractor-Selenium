@@ -4,6 +4,7 @@
   "description": "Parallel tests protractor  =============",
   "main": "",
   "devDependencies": {
-    "protractor": "2.1.0"
+    "protractor": "*",
+    "https-proxy-agent": "*"
   }
 }
