@@ -1,8 +1,6 @@
 language: node_js
 node_js:
 - '7.0'
-before_script: npm install
-script: "./node_modules/.bin/protractor conf.js"
 env:
   global:
   - SAUCE_USERNAME=sauce_examples
