@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "Parallel tests protractor  =============",
   "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/protractor conf.js"
+  },
   "devDependencies": {
-    "protractor": "*",
-    "https-proxy-agent": "*"
   }
 }
