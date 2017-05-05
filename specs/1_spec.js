@@ -1,10 +1,10 @@
 // spec.js
 describe('Protractor Demo App1', function() {
   it('should greet the named user', function() {
-    browser.ignoreSynchronization=true;  // must ignore synchronization on iOS
+    browser.ignoreSynchronization = true;  // must ignore synchronization on iOS when test against https
 
     browser.executeScript("sauce:context=Going to 'angularjs.org'");
-    browser.get('http://www.angularjs.org');
+    browser.get('https://www.angularjs.org');
 
 
     browser.executeScript("sauce:context=Sending text to name input field");
