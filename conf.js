@@ -13,19 +13,12 @@ exports.config = {
   },
 
   multiCapabilities: [{
-    browserName: 'firefox',
-    version: '32',
-    platform: 'OS X 10.10',
-    name: "firefox-tests",
-    shardTestFiles: true,
-    maxInstances: 25
-  }, {
-    browserName: 'chrome',
-    version: '41',
-    platform: 'Windows 7',
-    name: "chrome-tests",
-    shardTestFiles: true,
-    maxInstances: 25
+    browserName: 'Safari',
+    appiumVersion: '1.6.3',
+    deviceName: 'iPhone 7 Simulator',
+    deviceOrientation: 'portrait',
+    platformVersion: '10.2',
+    platformName: 'iOS'
   }],
 
   onComplete: function() {
