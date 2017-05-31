@@ -1,13 +1,13 @@
 // conf.js
-var HTTPSProxyAgent = require('https-proxy-agent');
-var sauceRestAgent = new HTTPSProxyAgent("http://<proxy>:<port>")
+// var HTTPSProxyAgent = require('https-proxy-agent');
+// var sauceRestAgent = new HTTPSProxyAgent("http://<proxy>:<port>")
 
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    sauceAgent: sauceRestAgent,
+    // sauceAgent: sauceRestAgent,
 
-    webDriverProxy: 'http://<proxy>:<port>',
+    // webDriverProxy: 'http://<proxy>:<port>',
 
     //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
     specs: ['specs/*spec.js'],
@@ -20,7 +20,7 @@ exports.config = {
 
     multiCapabilities: [{
         browserName: 'firefox',
-        version: '32',
+        version: 'latest',
         platform: 'OS X 10.10',
         name: "firefox-tests",
         shardTestFiles: true,
