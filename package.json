@@ -7,6 +7,5 @@
     "test": "./node_modules/.bin/protractor conf.js"
   },
   "devDependencies": {
-    "protractor": "5.1.0"
   }
 }
