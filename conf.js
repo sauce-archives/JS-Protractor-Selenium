@@ -24,14 +24,18 @@ exports.config = {
         platform: 'OS X 10.10',
         name: "firefox-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        //parentTunnel: 'userNameForParentTunnel',
+        //tunnelIdentifier: 'tunnelIdentifier',
     }, {
         browserName: 'chrome',
         version: '41',
         platform: 'Windows 7',
         name: "chrome-tests",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        //parentTunnel: 'userNameForParentTunnel',
+        //tunnelIdentifier: 'tunnelIdentifier',
     }],
 
     onComplete: function () {

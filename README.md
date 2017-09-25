@@ -36,6 +36,12 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 1. There may be additional latency when using a remote webdriver to run tests on Sauce Labs. Timeouts or Waits may need to be increased.
     * [Selenium tips regarding explicit waits](https://wiki.saucelabs.com/display/DOCS/Best+Practice%3A+Use+Explicit+Waits)
 
+2.  If you are behind a firewall and/or your company has a private npm repo, you might need to add a .npmrc file
+   at the same directory as package.json. Example contents of the file-
+   registry=https://npme.yourcompanyname.com/
+   strict-ssl=false
+
+
 ### Resources
 ##### [Sauce Labs Documentation](https://wiki.saucelabs.com/)
 
