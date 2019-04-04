@@ -25,14 +25,16 @@ exports.config = {
         platform: 'OS X 10.10',
         name: "firefox-OSX",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        build: 'firefox'
     }, {
         browserName: 'chrome',
         version: 'latest',
         platform: 'Windows 7',
         name: "chrome-win7",
         shardTestFiles: true,
-        maxInstances: 25
+        maxInstances: 25,
+        'build': 'chrome'
     }, {
         browserName: 'safari',
         version: 'latest',
@@ -69,7 +71,9 @@ exports.config = {
         shardTestFiles: true,
         maxInstances: 25
     }],
-
+    jasmineNodeOpts: {
+        showColors: true, // Use colors in the command line report.
+    },
     onComplete: function () {
 
         var printSessionId = function (jobName) {
