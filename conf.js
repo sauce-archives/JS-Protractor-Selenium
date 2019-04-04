@@ -23,14 +23,49 @@ exports.config = {
         browserName: 'firefox',
         version: 'latest',
         platform: 'OS X 10.10',
-        name: "firefox-tests",
+        name: "firefox-OSX",
         shardTestFiles: true,
         maxInstances: 25
     }, {
         browserName: 'chrome',
-        version: '41',
+        version: 'latest',
         platform: 'Windows 7',
-        name: "chrome-tests",
+        name: "chrome-win7",
+        shardTestFiles: true,
+        maxInstances: 25
+    }, {
+        browserName: 'safari',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "safari-win7",
+        shardTestFiles: true,
+        maxInstances: 25
+    }, {
+        browserName: 'edge',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "edge-win7",
+        shardTestFiles: true,
+        maxInstances: 25
+    }, {
+        browserName: 'chrome',
+        version: 'latest',
+        platform: 'Windows 10',
+        name: "chrome-win10",
+        shardTestFiles: true,
+        maxInstances: 25
+    }, {
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 10',
+        name: "firefox-win10",
+        shardTestFiles: true,
+        maxInstances: 25
+    }, {
+        browserName: 'edge',
+        version: 'latest',
+        platform: 'Windows 10',
+        name: "edge-win10",
         shardTestFiles: true,
         maxInstances: 25
     }],
