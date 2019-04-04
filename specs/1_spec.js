@@ -9,49 +9,6 @@ describe('Angular 1', function() {
     }
     expect(true);
     browser.executeScript("sauce:context=End test*******");
-
-  });
-  it('should add a todo 2', function() {
-    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
-    browser.get('https://angularjs.org');
-
-    for(i = 0; i < 10; i++){
-      addItemToList('write ${i} protractor test');
-    }
-    expect(true);
-
-    browser.executeScript("sauce:context=End test*******");
-  });
-  it('should add a todo 2', function() {
-    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
-    browser.get('https://angularjs.org');
-
-    for(i = 0; i < 10; i++){
-      addItemToList('write ${i} protractor test');
-    }
-    expect(true);
-
-    browser.executeScript("sauce:context=End test*******");
-  });
-  it('should add a todo 2', function() {
-    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
-    browser.get('https://angularjs.org');
-
-    for(i = 0; i < 10; i++){
-      addItemToList('write ${i} protractor test');
-    }
-    expect(true);
-    browser.executeScript("sauce:context=End test*******");
-  });
-  it('should add a todo 2', function() {
-    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
-    browser.get('https://angularjs.org');
-
-    for(i = 0; i < 10; i++){
-      addItemToList('write ${i} protractor test');
-    }
-    expect(true);
-    browser.executeScript("sauce:context=End test*******");
   });
 });
 
