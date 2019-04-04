@@ -5,6 +5,7 @@
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
+    //restartBrowserBetweenTests: true,
     // sauceAgent: sauceRestAgent,
 
     // webDriverProxy: 'http://<proxy>:<port>',
@@ -41,6 +42,6 @@ exports.config = {
                 console.log('SauceOnDemandSessionID=' + session.getId() + ' job-name=' + jobName);
             });
         }
-        printSessionId("Insert Job Name Here");
+        printSessionId(jobName);
     }
 }

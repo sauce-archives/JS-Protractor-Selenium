@@ -1,14 +1,64 @@
 // spec.js
-describe('Protractor Demo App1', function() {
-  it('should greet the named user', function() {
-    browser.executeScript("sauce:context=Going to 'angularjs.org'");
-    browser.get('http://www.angularjs.org');
+describe('Angular 1', function() {
+  it('should add a todo', function() {
+    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
+    browser.get('https://angularjs.org');
 
-    browser.executeScript("sauce:context=Sending text to name input field");
-    element(by.model('yourName')).sendKeys('Example');
+    for(i = 0; i < 10; i++){
+      addItemToList('write ${i} protractor test');
+    }
+    expect(true);
+    browser.executeScript("sauce:context=End test*******");
 
-    browser.executeScript("sauce:context=Asserting 'Hello Example!' text is present");
-    var greeting = element(by.binding('yourName'));
-    expect(greeting.getText()).toEqual('Hello Example!');
+  });
+  it('should add a todo 2', function() {
+    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
+    browser.get('https://angularjs.org');
+
+    for(i = 0; i < 10; i++){
+      addItemToList('write ${i} protractor test');
+    }
+    expect(true);
+
+    browser.executeScript("sauce:context=End test*******");
+  });
+  it('should add a todo 2', function() {
+    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
+    browser.get('https://angularjs.org');
+
+    for(i = 0; i < 10; i++){
+      addItemToList('write ${i} protractor test');
+    }
+    expect(true);
+
+    browser.executeScript("sauce:context=End test*******");
+  });
+  it('should add a todo 2', function() {
+    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
+    browser.get('https://angularjs.org');
+
+    for(i = 0; i < 10; i++){
+      addItemToList('write ${i} protractor test');
+    }
+    expect(true);
+    browser.executeScript("sauce:context=End test*******");
+  });
+  it('should add a todo 2', function() {
+    browser.executeScript("sauce:context=Going to 'An Angular 1 app'*****");
+    browser.get('https://angularjs.org');
+
+    for(i = 0; i < 10; i++){
+      addItemToList('write ${i} protractor test');
+    }
+    expect(true);
+    browser.executeScript("sauce:context=End test*******");
   });
 });
+
+function addItemToList(message)
+{
+  browser.executeScript("sauce:context=Send keys next...'");
+  element(by.model('todoList.todoText')).sendKeys(message);
+  browser.executeScript("sauce:context=Click is next...'");
+  element(by.css('[value="add"]')).click();
+}
