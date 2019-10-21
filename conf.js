@@ -1,18 +1,9 @@
-// conf.js
-// var HTTPSProxyAgent = require('https-proxy-agent');
-// var sauceRestAgent = new HTTPSProxyAgent("http://<proxy>:<port>")
-
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    // sauceAgent: sauceRestAgent,
+    // sauceRegion: 'eu',
 
-    // webDriverProxy: 'http://<proxy>:<port>',
-
-    //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
     specs: ['specs/*spec.js'],
-
-    // restartBrowserBetweenTests: true,
 
     onPrepare: function () {
         var caps = browser.getCapabilities()
