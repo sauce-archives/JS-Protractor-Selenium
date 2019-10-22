@@ -1,13 +1,13 @@
 {
-  "name": "JS-Protractor-Selenium",
-  "version": "0.0.0",
-  "description": "Parallel tests protractor  =============",
+  "name": "js-protractor-sample",
+  "version": "0.1.0",
+  "description": "Sample framework for using Sauce Labs with Protractor",
   "main": "",
   "scripts": {
     "test": "./node_modules/.bin/protractor conf.js"
   },
-  "devDependencies": {
-  	"protractor": "5.3.2",
-  	"https-proxy-agent": "latest"
+  "dependencies": {
+    "chai": "^1.9.1",
+    "protractor": "5.4.1"
   }
 }
