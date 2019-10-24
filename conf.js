@@ -1,14 +1,9 @@
-// conf.js
-// var HTTPSProxyAgent = require('https-proxy-agent');
-// var sauceRestAgent = new HTTPSProxyAgent("http://<proxy>:<port>")
-
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    
-    specs: ['specs/*spec.js'],
+    // sauceRegion: 'eu',
 
-    // restartBrowserBetweenTests: true,
+    specs: ['specs/*spec.js'],
 
     onPrepare: function () {
         var caps = browser.getCapabilities()
