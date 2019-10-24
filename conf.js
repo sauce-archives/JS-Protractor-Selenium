@@ -12,7 +12,7 @@ exports.config = {
     multiCapabilities: [{
         browserName: 'firefox',
         version: 'latest',
-        platform: 'OS X 10.12',
+        platform: 'OS X 10.13',
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25
@@ -32,6 +32,5 @@ exports.config = {
                 console.log('SauceOnDemandSessionID=' + session.getId() + ' job-name=' + jobName);
             });
         }
-        printSessionId("Insert Job Name Here");
     }
 }
